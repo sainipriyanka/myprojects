@@ -1,0 +1,9 @@
+Installation of MediaWiki:
+1.Type the following commands in termial
+        wget http://releases.wikimedia.org/mediawiki/1.23/mediawiki-1.23.5.tar.gz
+(or)  
+        wget http://releases.wikimedia.org/mediawiki/1.23/mediawiki-1.23.5.tar.gz
+2.The downloaded files are in .tar.gz format, so will need to be uncompressed before use. you can untar the file using this command:
+       			 tar xvzf mediawiki-*.tar.gz
+3.place the resulting folder in  var/www/html/ folder
+Open browser and type localhost and start installation.
