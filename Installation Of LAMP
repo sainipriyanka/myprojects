@@ -1,0 +1,29 @@
+Setting up LAMP (Linux, Apache, MySQL & PHP)
+Open Terminal and type the below commands to Install LAMP
+1.apt-get update
+2.Install Apache2 and PHP5
+3.apt-get install apache2 php5 libapache2-mod-php5 php5-gd
+4.chmod -R 777 /var/www
+5.Check if apache is working
+/etc/init.d/apache2 restart
+nano /var/www/info.php
+6.Copy & paste the folowing php code in the nano editor
+<?php
+phpinfo();
+?>
+7.Go and check http://localhost/info.php 
+in your browser to see configuration of installed php version.
+
+8.Install Mysql and PHPmyadmin
+9.apt-get install mysql-server mysql-client php5-mysql
+10.apt-get install phpmyadmin
+When prompted for a password enter a Password.
+
+Creating a MySQL DB & user for your Drupal installation
+mysqladmin -u root -p create d7
+Enter Password when you are prompted for password. If you get a “Database exists” error, please issue “mysqladmin -u root -p drop d7” to delete the existing database and then issue the create command.
+Configuring Apache for Clean URLs
+a2enmod rewrite
+/etc/init.d/apache2 restart
+chmod -R 777 /var/www
+Your Are Successfully installed LAMP.
